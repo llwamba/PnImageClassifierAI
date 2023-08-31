@@ -1,0 +1,51 @@
+{% extends "base.html" %} {% block content %}
+
+<div class="container">
+  <div class="title">
+    <h2>Pneumonia Prediction</h2>
+  </div>
+
+  <form method="post" enctype="multipart/form-data">
+    <div class="file-section">
+      <input
+        id="file-upload"
+        class="hidden"
+        type="file"
+        name="file"
+        accept=".jpg,.jpeg,.png"
+        required
+      />
+      <label for="file-upload" id="drag-file" class="upload-section" required>
+        <div id="upload-caption">Drop image here or click to select</div>
+        <img id="image-preview" class="hidden" />
+      </label>
+    </div>
+
+    <div style="margin-bottom: 2rem">
+      <input
+        type="submit"
+        value="Predict"
+        class="button"
+        id="pred-but"
+        onclick="warningMessage();"
+      />
+      <input
+        type="reset"
+        value="Clear"
+        class="button"
+        id="clear"
+        onclick="clearImage();"
+      />
+    </div>
+    <div class="footer">
+      <p>
+        This web application and its neural network model were designed and
+        developed by Lionel M. Lwamba
+      </p>
+    </div>
+  </form>
+
+  <div id="result"></div>
+</div>
+
+{% endblock %}
