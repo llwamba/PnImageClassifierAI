@@ -16,7 +16,7 @@ This Flask application is designed to serve as an interface for predicting pneum
 
 
 ## VGG16 Model Details
-This Flask app complements the ["Pneumonia Detection CNN"][https://github.com/llwamba/pneumonia_detection_cnn] repository, where I trained and evaluated the VGG16 model on chest X-ray images.
+This Flask app complements the ["Pneumonia Detection CNN"](https://github.com/llwamba/pneumonia_detection_cnn) repository, where I trained and evaluated the VGG16 model on chest X-ray images.
 
 Here are some key details:
 1. **Accuracy**: The VGG16 model achieved an accuracy of 96% on the test dataset.
