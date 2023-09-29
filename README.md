@@ -1,10 +1,10 @@
 # Pneumonia Image Classifier App
 
 ## Overview
-This Flask application is designed to serve as an interface for predicting pneumonia in chest X-ray images using deep learning models. It utilizes a pre-trained VGG16 model to classify X-ray images into two categories: "Normal" and "Pneumonia." The application is integrated with a web interface, allowing users to upload X-ray images for real-time predictions.
+I have designed this Flask App to serve as an interface for predicting pneumonia in chest X-ray images using deep learning models. It uses a pre-trained VGG16 model to classify X-ray images into two categories: "Normal" and "Pneumonia." The application is integrated with a web interface, allowing users to upload X-ray images for real-time predictions.
 
 ## Features
-1. **Homepage**: The app provides a simple web interface with a homepage (/) that displays an HTML form for uploading chest X-ray images.
+1. **Homepage**: The app provides a simple web interface with a homepage (**/**) that displays an HTML form for uploading chest X-ray images.
 2. **Prediction Endpoint**: Upon submitting an X-ray image through the form, the app processes the image, preprocesses it, and passes it through the VGG16 model for prediction. The prediction is returned in JSON format, including the prediction value, prediction percentage, and the label ("PNEUMONIA" or "NORMAL").
 
 ## How to Use
